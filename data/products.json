@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Smartphone",
+    "price": 12000,
+    "image": "images/phone.jpg",
+    "description": "A sleek smartphone with great performance and long-lasting battery."
+  },
+  {
+    "id": 2,
+    "name": "Headphones",
+    "price": 2000,
+    "image": "images/headphones.jpg",
+    "description": "High-quality wireless headphones with noise cancellation."
+  },
+  {
+    "id": 3,
+    "name": "Laptop",
+    "price": 55000,
+    "image": "images/laptop.jpg",
+    "description": "Powerful laptop with 16GB RAM, 512GB SSD, and the latest processor."
+  },
+  {
+    "id": 4,
+    "name": "Smartwatch",
+    "price": 4000,
+    "image": "images/watch.jpg",
+    "description": "Fitness smartwatch with heart rate monitor and GPS."
+  }
+]

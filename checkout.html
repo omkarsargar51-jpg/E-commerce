@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - My E-Commerce</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>My E-Commerce</h1>
+        <nav id="main-nav">
+            </nav>
+    </header>
+    <main>
+        <h2>Checkout</h2>
+        <form id="checkout-form" class="auth-form">
+            <input type="text" id="name" placeholder="Name" required><br>
+            <input type="text" id="address" placeholder="Address" required><br>
+
+            <h3>Select Payment Method</h3>
+            <div class="payment-options">
+                <button type="button" id="cod-btn" class="btn">Cash on Delivery</button>
+                <button type="button" id="qr-btn" class="btn">Pay with QR Code</button>
+            </div>
+            <div id="qr-code-section" style="display: none;">
+                <h4>Scan to Pay</h4>
+                <p>Please scan the QR code to complete your payment. Your order will be confirmed upon receipt.</p>
+                <img src="images/qr-code.png" alt="QR Code" style="max-width: 200px;">
+                <button type="button" id="confirm-payment-btn" class="btn">I have paid</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 My E-Commerce</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
