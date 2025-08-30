@@ -33,7 +33,7 @@ const formatPrice = (price) => {
 // --- PRODUCT & DATA FUNCTIONS ---
 async function fetchProducts() {
     try {
-        const res = await fetch("http://localhost:3000/api/products");
+        const res = await fetch('https://my-ecommerce-api-8h2l.onrender.com/api/products');
         if (!res.ok) {
             throw new Error(`HTTP error! status: ${res.status}`);
         }
@@ -270,7 +270,7 @@ async function handleCheckout(paymentMethod) {
             checkoutBtn.classList.add('loading');
         }
 
-        const res = await fetch('http://localhost:3000/api/checkout', {
+        const res = await fetch('https://my-ecommerce-api-8h2l.onrender.com/api/checkout', {
             method: 'POST',
             headers: { 
                 'Content-Type': 'application/json',
@@ -340,7 +340,7 @@ async function handleRegister(event) {
     const password = document.getElementById('reg-password').value;
 
     try {
-        const res = await fetch('http://localhost:3000/api/auth/register', {
+        const res = await fetch('https://my-ecommerce-api-8h2l.onrender.com/api/auth/register', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ name, email, password })
@@ -364,7 +364,7 @@ async function handleLogin(event) {
     const password = document.getElementById('log-password').value;
 
     try {
-        const res = await fetch('http://localhost:3000/api/auth/login', {
+        const res = await fetch('https://my-ecommerce-api-8h2l.onrender.com/api/auth/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email, password })
@@ -440,7 +440,7 @@ async function loadUserOrders() {
     }
 
     try {
-        const res = await fetch('http://localhost:3000/api/orders', {
+        const res = await fetch('https://my-ecommerce-api-8h2l.onrender.com/api/orders', {
             headers: {
                 'Authorization': `Bearer ${token}`
             }
@@ -483,7 +483,7 @@ async function loadUserProfile() {
     }
 
     try {
-        const res = await fetch('http://localhost:3000/api/profile', {
+        const res = await fetch('https://my-ecommerce-api-8h2l.onrender.com/api/profile', {
             headers: {
                 'Authorization': `Bearer ${token}`
             }
